@@ -230,7 +230,7 @@ class KeyboardKing(tkinter.Tk):
         label.pack()
 
         # Vytvoření obrázku
-        image_path = r"c:\Users\uzivatel\Desktop\KeyboardKing\author.jpg"  # Změň tuto cestu na cestu k tvému obrázku
+        image_path = r"c:\Users\uzivatel\Desktop\KeyboardKing\author.jpg"
         max_size = (200, 200)
         image = Image.open(image_path)
         image.thumbnail(max_size)
@@ -238,7 +238,7 @@ class KeyboardKing(tkinter.Tk):
 
         # Zobrazení obrázku
         avatar_label = tkinter.Label(about_window, image=photo)
-        avatar_label.image = photo  # Uložení reference na obrázek
+        avatar_label.image = photo 
         avatar_label.pack(pady=10)
 
     def run(self):
